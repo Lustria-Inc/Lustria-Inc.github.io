@@ -5,7 +5,7 @@ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:en
 :root[data-theme="dark"]{--bg:#1d1f23;--ink:#ece3cf;--card:#26282d;--line:#3d3f44;color-scheme:dark}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.7 "Cormorant Garamond",Georgia,serif}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Cormorant Garamond",Georgia,serif}
 h1,h2,h3{font-weight:700;line-height:1.1;margin:0}
 .lbl{font-family:Oswald,"Arial Narrow",sans-serif;letter-spacing:.3em;text-transform:uppercase;font-size:.75rem;color:var(--brass)}
 nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;padding-top:calc(14px + env(safe-area-inset-top,0px));background:rgba(15,27,45,.92);border-bottom:1px solid var(--brass);backdrop-filter:blur(6px)}
@@ -83,7 +83,7 @@ a.card{display:block;text-decoration:none;color:var(--ivory)}
 /* Founders: two cards always side by side, equal width and height, however much text is in each */
 .fgrid.pair{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
 .fgrid.pair .fc{min-width:0;overflow-wrap:anywhere}
-.fgrid.pair .portrait{max-width:none;width:100%}
+.fgrid.pair .portrait{max-width:320px;width:100%;margin-left:auto;margin-right:auto}
 @media(max-width:760px){
 .fgrid.pair{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .fgrid.pair .fc{padding:18px 12px}
