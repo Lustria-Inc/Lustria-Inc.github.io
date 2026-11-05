@@ -100,7 +100,7 @@ const INDUSTRIES={
 /* ---------- OUR VISION: write your own here ---------- */
 const VISION={
  label:"Our Vision", title:"What We Intend to Build",
- intro:"This is where Lustria sets out what it hopes to achieve this event. Replace this paragraph with your own vision statement.",
+ intro:"Get money.",
  goals:[
   {title:"Explore", text:"Leave the vault, map the world beyond it and find the resources a new civilisation will need."},
   {title:"Understand", text:"Research how what we find actually works, so that nothing is wasted and nothing is lost."},
