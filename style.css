@@ -91,3 +91,30 @@ a.card{display:block;text-decoration:none;color:var(--ivory)}
 .fgrid.pair .fc p{font-size:.9rem;line-height:1.5}
 .fgrid.pair .fc .facts{font-size:.6rem;letter-spacing:.1em}
 }
+
+/* ===== v2: single page with tabs, tighter scale ===== */
+html{font-size:15px}
+body{font-size:1.1rem;min-height:100vh;display:flex;flex-direction:column}
+main{flex:1;display:flex;flex-direction:column}
+.view{display:none}
+.view.on{display:flex;flex-direction:column;flex:1}
+.view>section:last-child{flex:1}
+.view:not(#v-home)>section:first-child{padding-top:120px}
+section{padding:72px 5vw}
+section.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.wrap{max-width:1120px}
+nav{padding:10px 4vw;padding-top:calc(10px + env(safe-area-inset-top,0px))}
+.hero{min-height:88vh;padding:120px 5vw clamp(200px,24vw,380px)}
+.hero h1{font-size:clamp(2.4rem,6.2vw,4.4rem)}
+.tag{font-size:clamp(1.15rem,2.4vw,1.5rem)}
+h2{font-size:clamp(1.9rem,3.6vw,2.6rem)}
+.hero svg.loco{width:max(100%,900px);max-height:none;min-height:0;left:50%;transform:translateX(-50%)}
+.stat b{font-size:2rem}.card h3{font-size:1.45rem}.pane h3{font-size:1.7rem}.fc h3{font-size:1.7rem}
+.intro{margin:18px 0 0}
+.fgrid.goals{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.fgrid,.grid,.depts{align-items:stretch}
+.card,.fc,.dept{overflow-wrap:anywhere}
+.rv{opacity:1;transform:none}
+.js .rv{opacity:0;transform:translateY(20px)}
+.js .rv.on{opacity:1;transform:none}
+@media(max-width:760px){.hero{padding-top:150px}.view:not(#v-home)>section:first-child{padding-top:150px}.hero svg.loco{width:900px}}
