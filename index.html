@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lustria Corporation · Orvella</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav><b><a href="index.html">LUSTRIA</a></b><div><a href="history.html">History</a><a href="founders.html">Founders</a><a href="industries.html">Industries</a><a href="vision.html">Our Vision</a><a href="join.html">Join Us</a></div></nav>
-<main>
-<header class="hero">
-<svg class="loco" viewBox="0 0 800 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+<!-- You never need to edit this file. All text lives in data.js -->
+<nav><b><a href="#" data-go="home">LUSTRIA</a></b><div id="nav">
+<a href="#" data-go="history">History</a><a href="#" data-go="founders">Founders</a><a href="#" data-go="industries">Industries</a><a href="#" data-go="vision">Our Vision</a><a href="#" data-go="join">Join Us</a></div></nav>
+<main id="app"></main>
+<footer id="foot"></footer>
+<template id="hero-art"><svg class="loco" viewBox="-400 0 1600 300" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
 <g class="smoke"><circle cx="152" cy="92" r="22"/><circle cx="152" cy="92" r="22" style="animation-delay:2.3s"/><circle cx="152" cy="92" r="22" style="animation-delay:4.6s"/></g>
 <g fill="#0a0f18">
 <path d="M130 100h44l-6 36h-32z"/><rect x="122" y="92" width="60" height="10" rx="3"/>
@@ -25,19 +27,10 @@
 <rect x="150" y="165" width="430" height="5" fill="#b8935a"/><rect x="505" y="96" width="30" height="40" fill="#d9b878" opacity=".75"/><rect x="580" y="96" width="30" height="40" fill="#d9b878" opacity=".75"/>
 <g fill="#0a0f18" stroke="#b8935a" stroke-width="4"><circle cx="170" cy="240" r="30"/><circle cx="260" cy="240" r="30"/><circle cx="350" cy="240" r="30"/><circle cx="560" cy="246" r="24"/><circle cx="640" cy="246" r="24"/></g>
 <g stroke="#b8935a" stroke-width="5"><path d="M170 240h180M260 240h-30" /></g>
-<rect y="272" width="800" height="28" fill="#0a0f18"/><rect y="270" width="800" height="4" fill="#b8935a"/>
-<g class="rail" fill="#6b5a43"><rect x="0" y="278" width="14" height="22"/><rect x="40" y="278" width="14" height="22"/><rect x="80" y="278" width="14" height="22"/><rect x="120" y="278" width="14" height="22"/><rect x="160" y="278" width="14" height="22"/><rect x="200" y="278" width="14" height="22"/><rect x="240" y="278" width="14" height="22"/><rect x="280" y="278" width="14" height="22"/><rect x="320" y="278" width="14" height="22"/><rect x="360" y="278" width="14" height="22"/><rect x="400" y="278" width="14" height="22"/><rect x="440" y="278" width="14" height="22"/><rect x="480" y="278" width="14" height="22"/><rect x="520" y="278" width="14" height="22"/><rect x="560" y="278" width="14" height="22"/><rect x="600" y="278" width="14" height="22"/><rect x="640" y="278" width="14" height="22"/><rect x="680" y="278" width="14" height="22"/><rect x="720" y="278" width="14" height="22"/><rect x="760" y="278" width="14" height="22"/><rect x="800" y="278" width="14" height="22"/></g>
-</svg>
-<div class="in">
-<div class="lbl">Orvella · Re-founded Beyond the Vault</div>
-<h1>Lustria <span>Corporation</span></h1>
-<p class="tag">Our parents built the engines of a nation. We will build what comes next.</p>
-<p class="i">A century after famine, war and nuclear fire drove the Republic of Orvella underground, Lustria Corporation returns. We are leaving Vault E to explore the unknown, uncover its resources and rebuild a company as great as the one that came before.</p>
-<div class="btns"><a class="btn f" href="join.html">Join the Corporation</a><a class="btn o" href="history.html">Our Heritage</a></div>
-</div>
-</header><section class="dark"><div class="wrap"><div class="lbl rv">Explore</div><div class="rule"></div><h2 class="rv">The Corporation</h2><div class="grid"><a class="card rv" href="history.html"><div class="n">I</div><h3>History</h3><p>Heritage and the long road from Republic to Vault to Surface.</p></a><a class="card rv" href="founders.html"><div class="n">II</div><h3>Founders</h3><p>Two houses, one corporation, and the heirs carrying it forward.</p></a><a class="card rv" href="industries.html"><div class="n">III</div><h3>Industries</h3><p>What the new Lustria will build, research and trade.</p></a><a class="card rv" href="vision.html"><div class="n">IV</div><h3>Our Vision</h3><p>What we intend to achieve, and how.</p></a><a class="card rv" href="join.html"><div class="n">V</div><h3>Join Us</h3><p>Take your place at the works.</p></a></div></div></section>
-</main>
-<footer><b>LUSTRIA CORPORATION</b><br>Orvella · Re-founded after the Vault<small>© Lustria Corporation. All rights reserved.</small></footer>
+<rect x="-400" y="272" width="1600" height="28" fill="#0a0f18"/><rect x="-400" y="270" width="1600" height="4" fill="#b8935a"/>
+<g class="rail" fill="#6b5a43"><rect x="-440" y="278" width="14" height="22"/><rect x="-400" y="278" width="14" height="22"/><rect x="-360" y="278" width="14" height="22"/><rect x="-320" y="278" width="14" height="22"/><rect x="-280" y="278" width="14" height="22"/><rect x="-240" y="278" width="14" height="22"/><rect x="-200" y="278" width="14" height="22"/><rect x="-160" y="278" width="14" height="22"/><rect x="-120" y="278" width="14" height="22"/><rect x="-80" y="278" width="14" height="22"/><rect x="-40" y="278" width="14" height="22"/><rect x="0" y="278" width="14" height="22"/><rect x="40" y="278" width="14" height="22"/><rect x="80" y="278" width="14" height="22"/><rect x="120" y="278" width="14" height="22"/><rect x="160" y="278" width="14" height="22"/><rect x="200" y="278" width="14" height="22"/><rect x="240" y="278" width="14" height="22"/><rect x="280" y="278" width="14" height="22"/><rect x="320" y="278" width="14" height="22"/><rect x="360" y="278" width="14" height="22"/><rect x="400" y="278" width="14" height="22"/><rect x="440" y="278" width="14" height="22"/><rect x="480" y="278" width="14" height="22"/><rect x="520" y="278" width="14" height="22"/><rect x="560" y="278" width="14" height="22"/><rect x="600" y="278" width="14" height="22"/><rect x="640" y="278" width="14" height="22"/><rect x="680" y="278" width="14" height="22"/><rect x="720" y="278" width="14" height="22"/><rect x="760" y="278" width="14" height="22"/><rect x="800" y="278" width="14" height="22"/><rect x="840" y="278" width="14" height="22"/><rect x="880" y="278" width="14" height="22"/><rect x="920" y="278" width="14" height="22"/><rect x="960" y="278" width="14" height="22"/><rect x="1000" y="278" width="14" height="22"/><rect x="1040" y="278" width="14" height="22"/><rect x="1080" y="278" width="14" height="22"/><rect x="1120" y="278" width="14" height="22"/><rect x="1160" y="278" width="14" height="22"/><rect x="1200" y="278" width="14" height="22"/><rect x="1240" y="278" width="14" height="22"/></g>
+</svg></template>
+<script src="data.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
